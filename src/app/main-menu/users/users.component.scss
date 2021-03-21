@@ -1,0 +1,61 @@
+// import scss
+@import 'src/assets/scss/event';
+@import 'src/assets/scss/button';
+@import 'src/assets/scss/modal-small';
+
+// import font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,700,300);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sintony&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200&display=swap');
+
+.container {
+    position: absolute;
+    margin-top: 90px;
+    left: 115px;
+    margin-bottom: 50px;
+}
+
+p-dialog {
+    .ui-dialog-titlebar {
+        background-color: white !important;
+    }
+}
+
+p-listbox {
+    margin: 0px 20px 0px;
+}
+
+.item-list {
+    margin-left: 20px;
+}
+
+:host ::ng-deep .ui-dropdown {
+    min-width: 100%;
+    padding: 12px 10px 12px;
+    border-radius: 5px;
+}
+
+form, .container-dialog {
+    margin: 0px 20px 0px;
+}
+
+:host ::ng-deep .ui-dialog-title {
+    font-size: 20px;
+}
+
+.options {
+    margin-bottom: 10px;
+    width: 100%;
+    i {
+        font-size: 16 px;
+    }
+}
+
+.right-side {
+    text-align: right;
+}

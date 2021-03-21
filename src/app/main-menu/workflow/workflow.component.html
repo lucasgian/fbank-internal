@@ -1,0 +1,44 @@
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand">{{ account.userName }}</a>
+        <form class="d-flex">
+            <button class="btn btn-outline-default" (click)="logout()" type="submit">Sair <i class="pi pi-sign-out"></i> </button>
+        </form>
+    </div>
+</nav>
+
+<div class="container top-bar">
+    <div class="row">
+      <div class="card-top col-sm">
+        <p-card>
+            <div class="header">
+                <strong>Extrato</strong>
+            </div>
+            <p class="text-center">
+                <span class="title-card">Despesas - mar</span> <span class="color-red"><br>R$ 0,00</span>
+            </p>
+        </p-card>
+      </div>
+      <div class="card-top col-sm">
+        <p-card>
+            <div class="header">
+                <strong>Saldo</strong>
+            </div>
+            <p class="text-center">
+                <span class="font-size-32px color-green">R$ 0,00</span>
+            </p>
+        </p-card>
+      </div>
+      <div class="card-top col-sm">
+        <p-card>
+            <div class="header">
+                <strong>Investimentos</strong>
+            </div>
+            <p class="text-center">
+                <span class="title-card">Despesas - mar</span> <span class="color-green"><br>R$ 0,00</span>
+            </p>
+        </p-card>
+      </div>
+    </div>
+  </div>
+            

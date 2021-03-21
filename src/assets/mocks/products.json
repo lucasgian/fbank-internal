@@ -1,0 +1,16 @@
+{
+    "data": {
+        "products": [
+            {"code": "0", "name": "Pizza Grande", "price": "20", "description": "500 caracteres Grande muito grande isso é grande pra burro sacanagem, como isso é grande. Não acredito que como isso é grande, isso esta errado, não pode ser tão grande será que cabe? talvez não caiba, caso caiba isso será incrível, loucura, uma vida em palavras, um passo curto para uma historia, mas um grande passo para uma descrição. Inacreditável, não acredito vou chegar as quinhentas palavras, um verdadeiro milagre em forma de letras, quase, falta pouco, estou chegando na meta quase noventa palavras"},
+            {"code": "1", "name": "Hambúrguer com Queijo", "price": "5.90", "description": "Sem description"},
+            {"code": "2", "name": "Pipoca", "price": "6.99", "description": "Pipoca sem pipoca"},
+            {"code": "3", "name": "Pizza Pequena", "price": "12.50", "description": "Pequeno"},
+            {"code": "4", "name": "Pizza Média", "price": "65.88", "description": "200 caracteres Grande muito grande isso é grande pra burro sacanagem, como isso é grande. Não acredito que como isso é grande, isso esta errado, não pode ser tão grande será que cabe? talvez não caiba"},
+            {"code": "5", "name": "X-Salada", "price": "0.88", "description": "Nada mais"},
+            {"code": "6", "name": "X-Tudo", "price": "16.66", "description": "Sem carne :("},
+            {"code": "7", "name": "X-Baicon", "price": "1.33", "description": "Sem Baicon"},
+            {"code": "8", "name": "Açai", "price": "20.5", "description": "Estamos sem Açai"},
+            {"code": "9", "name": "Pizza Doce", "price": "20.9", "description": "Com feijão"}
+        ]
+    }
+}

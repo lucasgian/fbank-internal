@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,700,300);
+
+th:last-child {
+    border-radius: 0px 4px 4px 0px;
+    text-align: center;
+    width: 10%;
+}
+
+th:first-child {
+    border-radius: 4px 0px 0px 4px
+}
+
+td:last-child {
+    border-radius: 0px 4px 4px 0px;
+    width: 10%;
+}
+
+td:first-child {
+    text-align: left;
+    border-radius: 4px 0px 0px 4px;
+}
+
+tr td, th {
+    background-color: transparent !important;
+    color: black !important;
+    border: none !important;
+}
+
+th:focus-within {
+    background-color: #e0e0e0 !important;
+    color: black !important;
+}
+
+td {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+th {
+    box-shadow: 0 0 0 0 !important;
+    font-family: 'Nunito', sans-serif !important;
+    font-size: 20px;
+}
+
+tr {
+    height: 60px !important;
+}
+
+p-sortIcon {
+    font-size: 16px;
+}
+
+:host ::ng-deep .ui-table-customers {
+
+    .customer-badge {
+        border-radius: 2px;
+        padding: .25em .5em;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: .3px;
+
+        &.status-client {
+            background-color: #C8E6C9;
+            color: #256029;
+        }
+
+        &.status-admin {
+            background-color: #FFCDD2;
+            color: #C63737;
+        }
+
+        &.status-user {
+            background-color: #FEEDAF;
+            color: #8A5340;
+        }
+
+        &.status-new {
+            background-color: #B3E5FC;
+            color: #23547B;
+        }
+
+        &.status-renewal {
+            background-color: #ECCFFF;
+            color: #694382;
+        }
+
+        &.status-proposal {
+            background-color: #FFD8B2;
+            color: #805B36;
+        }
+    }
+}
+
+:host ::ng-deep .ui-corner-left {
+    display: none;
+}
+
+:host ::ng-deep .ui-corner-right {
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 2px;
+    color: gray;
+}

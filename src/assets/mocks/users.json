@@ -1,0 +1,16 @@
+{
+    "data": {
+        "users": [
+            {"code": "0", "name": "Paulo", "permission": "USER", "email": "paulo@gmail.com"},
+            {"code": "1", "name": "Laiz", "permission": "CLIENT", "email": "laiz@gmail.com"},
+            {"code": "2", "name": "João Marcos Pereira da Rosa", "permission": "ADMIN", "email": "joao@gmail.com"},
+            {"code": "3", "name": "Marco Antonio", "permission": "USER", "email": "marco@gmail.com"},
+            {"code": "4", "name": "Lucas Ricardo", "permission": "USER", "email": "lucas@gmail.com"},
+            {"code": "5", "name": "Afonso Padilha", "permission": "CLIENT", "email": "afonso@gmail.com"},
+            {"code": "6", "name": "Guilherme da Silva", "permission": "CLIENT", "email": "guilherme@gmail.com"},
+            {"code": "7", "name": "Maria Clara", "permission": "CLIENT", "email": "maria@gmail.com"},
+            {"code": "8", "name": "Antonio F", "permission": "CLIENT", "email": "antonio@gmail.com"},
+            {"code": "9", "name": "Daniel A", "permission": "CLIENT", "email": "daniel@gmail.com"}
+        ]
+    }
+}

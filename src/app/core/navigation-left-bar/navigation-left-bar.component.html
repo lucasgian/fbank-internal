@@ -1,0 +1,17 @@
+<ul class="menu-actions">
+    <li
+        *ngFor="let option of options; index as i; last as isLast"
+        (click)="selectedOption(i)"
+        [ngClass]="{'selected': option.selected, 'last-position': isLast && hidden}"
+        [routerLink]="option.link">
+        <i [class]="option.icon"></i>
+        <div *ngIf="!hidden" class="option">
+            <span class="title">
+                {{ option.title }}
+            </span>
+            <span class="subtitle">
+                {{ option.subtitle }}
+            </span>
+        </div>
+    </li>
+</ul>

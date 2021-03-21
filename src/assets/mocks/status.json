@@ -1,0 +1,14 @@
+{
+    "data": [
+        {"description": "Ala minuta de frango", "price": 20.00, "status": "PREPARO"},
+        {"description": "Pizza de maça", "price": 36.90, "status": "EM PRODUÇÃO"},
+        {"description": "Bolo de chocolate", "price": 25, "status": "EM PRODUÇÃO"},
+        {"description": "Batata frita", "price": 16, "status": "PREPARO"},
+        {"description": "Macarrão", "price": 18.90, "status": "PREPARO"},
+        {"description": "Pizza de presunto", "price": 49.99, "status": "PREPARO"},
+        {"description": "Sushi", "price": 120, "status": "PREPARO"},
+        {"description": "Coca-cola", "price": 9.99, "status": "PREPARO"},
+        {"description": "Água com gás", "price": 25, "status": "EM PRODUÇÃO"},
+        {"description": "Danone", "price": 5.50, "status": "PREPARO"}
+    ]
+}

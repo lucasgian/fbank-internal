@@ -1,0 +1,38 @@
+<p-table 
+    [columns]="cols"
+    [value]="datas"
+    sortMode="multiple"
+    editMode="row"
+    styleClass="ui-table-customers"
+    selectionMode="single"
+    >
+    <ng-template pTemplate="header" let-columns>
+        <tr>
+            <th *ngFor="let col of columns" [pSortableColumn]="col.field">
+                {{col.header}}
+                <p-sortIcon [field]="col.field"></p-sortIcon>
+            </th>
+            <th></th>
+        </tr>
+    </ng-template>
+    <ng-template
+        pTemplate="body"
+        let-rowData
+        let-columns="columns">
+            <tr (click)="registerData(rowData)" [pEditableRow]="rowData" class="ui-selectable-row">
+                <td *ngFor="let col of columns" (click)="edit(rowData)">
+                    <span *ngIf="col.field === 'permission'" [class]="'customer-badge status-' + rowData[col.field].toLowerCase()">
+                        {{ rowData[col.field] }}
+                    </span>
+                    <span *ngIf="col.field !== 'permission'">{{rowData[col.field]}} </span>
+                </td>
+                <td>
+                    <p-splitButton
+                        [model]="items">
+                    </p-splitButton>
+                </td>
+             
+            </tr>
+    </ng-template>
+</p-table>
+

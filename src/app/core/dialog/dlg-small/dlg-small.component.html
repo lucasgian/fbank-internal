@@ -1,0 +1,48 @@
+<p-dialog
+    (onHide)="closeModal()"
+    [header]="title"
+    [(visible)]="displayModal"
+    [modal]="true"
+    [style]="{width: '30vw'}"
+    [baseZIndex]="10000"
+    [draggable]="false"
+    [resizable]="false">
+    <form *ngIf="option" [formGroup]="option.form">
+        <span *ngFor="let field of option.fields">
+            <div class="ui-fluid forms-grid">
+                <label class="title-label">
+                    <span *ngIf="field.required">*</span>
+                    {{ field.header }}
+                </label>
+                <input
+                    [ngClass]="{ 'invalid': option.form.controls[field.field].errors && !option.form.controls[field.field].valid && option.form.controls[field.field].touched, 'valid': option.form.controls[field.field].valid || !option.form.controls[field.field].touched }"
+                    *ngIf="!field.options"
+                    [type]="field.type"
+                    [(ngModel)]="field.value"
+                    [formControlName]="field.field"
+                    [placeholder]="field.placeholder">
+            </div>
+            <p-dropdown *ngIf="field.options" [(ngModel)]="field.value" [options]="field.options" [formControlName]="field.field"></p-dropdown>
+        </span>
+    </form>
+    <p-footer>
+        <button 
+            *ngIf="option && option.button"
+            type="button"
+            [disabled]="!option.form.valid"
+            (click)="action()"
+            [class]="option.button.styleClass">
+            <i *ngIf="option.button.icon" [class]="option.button.icon"></i>
+            {{ option?.button.title }}
+        </button>
+    </p-footer>
+</p-dialog>
+
+<div>
+    <a [class]="button.styleClass" (click)="showDisplayModal()">
+        <span>
+            <i [class]="button.icon"></i>
+            {{ button.title }}
+        </span>
+    </a>
+</div>

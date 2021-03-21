@@ -1,0 +1,65 @@
+:host ::ng-deep .ui-dialog {
+    padding: 0;   
+}
+
+:host ::ng-deep .ui-dialog .ui-dialog-titlebar {
+    border: 0px;
+    background-color: white;
+    color: #333333;
+    padding: 1em;
+    font-weight: 700;
+    border-bottom: 0 none;
+    border-radius: 12px 12px 0px 0px;
+}
+
+:host ::ng-deep .ui-dialog .ui-dialog-titlebar .ui-dialog-title {
+    margin: 10px 10px 0px;
+    float: left;
+}
+
+:host ::ng-deep .ui-shadow {
+    -webkit-box-shadow: 0 1px 3px 0  rgba(0,0,0,0);
+    -moz-box-shadow: 0 1px 3px 0  rgba(0,0,0,0);
+    box-shadow: 0 1px 3px 0  rgba(0,0,0,0)
+}
+
+:host ::ng-deep .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon {
+    color: #848484;
+    border: 0 none;
+    padding: 0;
+    margin-left: 0.5em;
+    -moz-transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
+    -o-transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
+    -webkit-transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
+    transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+:host ::ng-deep .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon span {
+    width: auto;
+    padding: 10px;
+}
+
+
+:host ::ng-deep .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon:hover {
+    color: #333333;
+    background-color: #DDDDDD;
+}
+
+:host ::ng-deep .ui-dialog .ui-dialog-content {
+    background-color: #ffffff;
+    color: #333333;
+    border: 0px;
+    padding: 0.571em 1em;
+}
+
+:host ::ng-deep .ui-dialog .ui-dialog-footer {
+    border: 0px;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 1em 1em;
+    margin: 0;
+    text-align: right;
+    position: relative;
+    border-top: 0 none;
+    border-radius: 0px 0px 12px 12px;
+}

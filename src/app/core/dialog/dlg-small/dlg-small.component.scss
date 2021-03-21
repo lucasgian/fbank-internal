@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,700,300);
+@import 'src/assets/scss/button';
+
+:host ::ng-deep .ui-dialog .ui-dialog-content .ui-shadow {
+    div {
+        padding: 0px;
+        background-color: white;
+    }
+}
+
+:host ::ng-deep .ui-listbox {
+    width: 100%;
+    border-radius: 15px;
+}
+
+:host ::ng-deep .ui-listbox .ui-listbox-list .ui-listbox-item.ui-state-highlight {
+    color: black;
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input {
+    padding: 20px 15px 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 20px rgba(255,255,255,0.04);
+}
+
+.invalid {
+    border: 1px solid red !important;   
+}
+
+.valid {
+    border: 1px solid #868586;
+}
+
+:host ::ng-deep .ui-dropdown {
+    min-width: 100%;
+    padding: 12px 10px 12px;
+    border-radius: 5px;
+}
+
+form, .container-dialog {
+    margin: 0px 20px 0px;
+    text-align: left !important;
+}
+
+:host ::ng-deep .ui-dialog-title {
+    font-size: 20px;
+}
+
+.title-label {
+    font-size: 16px;
+    font-weight: bold; 
+    font-family: 'Nunito', sans-serif;
+}
